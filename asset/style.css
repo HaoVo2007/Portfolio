@@ -19,6 +19,10 @@
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.item_1 a:hover {
+    color: black;
+}
+
 .container_1 {
     background-color: white;
     padding: 20px;
@@ -154,6 +158,13 @@
     display: none;
 }
 
+.link a {
+    font-size: 1.2rem;
+    margin: 10px 5px;
+    color: violet;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 @media only screen and (max-width: 768px) {
 
     .container_1 {
@@ -168,15 +179,19 @@
         animation: fadeIn 0.5s ease-in-out;
         width: 100%;
         background-color: #bd5d38;
+        height: 100%;
     }
 
     .container_1.show img {
+        display: block;
         margin-top: 50px;
+        border-radius: 50%;
+        margin-left: 20%;
     }
     
     .container_1.show a {
         color: #343A40;
-        margin: 15px 0;
+        padding: 20px 10px;
         display: block;
         text-align: center;
     }
