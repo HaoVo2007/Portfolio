@@ -1,0 +1,199 @@
+
+.item_1 {
+    height: 150px;
+    width: 150px;
+}
+
+.item_1 img {
+    width: 120px;
+    height: 120px;
+    margin: 20px 0;
+    border-radius: 50%;
+}
+
+.item_1 a {
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container_1 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    padding-left: 170px;
+    padding-right: 170px;
+    background-color: #bd5d38;
+}
+
+.inf_1 {
+    padding: 150px 100px;
+    margin-left: 20px;
+    border-bottom: 2px solid #bd5d38 ;
+}
+
+.icons {
+    margin-top: 60px;
+}
+
+.icons i {
+    padding: 15px;
+    color: white;
+    border-radius: 50%;
+    background-color: #495057;
+    font-size: 1.5rem;
+    margin-right: 30px;
+}
+
+.content {
+    margin: 30px 0;
+    font-size: 1.2rem;
+    color: #AEB3B8;
+}
+
+.address {
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #AEB3B8;
+}
+
+.name {
+    font-size: 4.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #343A40;
+}
+
+.sticky-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.project {
+    margin-bottom: 40px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 15px 0;
+}
+
+.project span {
+    font-size: 1.4rem;
+    color: #AEB3B8 ;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.education h2 {
+    font-size: 2.2rem;
+    color: #343A40;
+    margin-top: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.education h3 {
+    font-size: 1.4rem;
+    color: #9B757D;
+    margin-bottom: 20px;
+}
+
+.education span {
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #9B757D ;
+}
+
+.skill h2 {
+    font-size: 2.2rem;
+    color: #343A40;
+    margin-top: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.icons-2 i {
+    padding: 20px;
+    font-size: 3rem;
+    color: #6C757D;
+    margin-right: 10px;
+}
+
+.information-content {
+    margin-top: 20px;
+}
+
+.information-content i {
+    color: #495057;
+}
+
+.information-content span {
+    font-size: 1rem;
+    margin-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #AEB3B8;
+}
+
+.interest {
+    margin-top: 50px;
+}
+
+.interest p {
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #AEB3B8;
+}
+
+.responsive {
+    padding: 10px;
+    font-size: 2.5rem;
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container_1 {
+        display: none !important;
+        position: relative;
+        background-color: #bd5d38; 
+        z-index: 1000; 
+    }
+    
+    .container_1.show {
+        display: block !important;
+        animation: fadeIn 0.5s ease-in-out;
+        width: 100%;
+        background-color: #bd5d38;
+    }
+
+    .container_1.show img {
+        margin-top: 50px;
+    }
+    
+    .container_1.show a {
+        color: #343A40;
+        margin: 15px 0;
+        display: block;
+        text-align: center;
+    }
+    
+    .responsive {
+        display: block;
+        position: absolute; /* Đảm bảo icon có vị trí tương đối */
+        z-index: 1001; /* Đảm bảo icon nằm trên container_1 */
+    }
+
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
